@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rapidrunapplication.VHDController">
+    <children>
+        <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="1100.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleGoToMain" text="Home" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane layoutY="27.0" prefHeight="700.0" prefWidth="1100.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="VHD">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="671.0" prefWidth="1001.0" style="-fx-background-color: #c5eae7;">
+                            <children>
+                                <Label layoutX="40.0" layoutY="25.0" text="View Horse Details">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="40.0" layoutY="68.0" text="Refresh to view Registered Horses' Details!">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                                <Button defaultButton="true" layoutX="40.0" layoutY="93.0" mnemonicParsing="false" onAction="#populateTable" prefHeight="34.0" prefWidth="74.0" text="Refresh">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <ScrollPane layoutX="56.0" layoutY="161.0">
+                                    <content>
+                                        <TableView fx:id="horseTable" prefHeight="430.0" prefWidth="987.0">
+                                            <columns>
+                                                <TableColumn fx:id="horseIdColumn" onEditStart="#initialize" prefWidth="100.0" text="Horse ID" />
+                                                <TableColumn fx:id="horseNameColumn" onEditStart="#initialize" prefWidth="112.80003356933594" text="Horse Name" />
+                                                <TableColumn fx:id="jockeyNameColumn" onEditStart="#initialize" prefWidth="111.20002746582031" text="Jockey Name" />
+                                                <TableColumn fx:id="horseAgeColumn" onEditStart="#initialize" prefWidth="76.79998779296875" text="Age" />
+                                                <TableColumn fx:id="horseBreedColumn" onEditStart="#initialize" prefWidth="100.0" text="Breed" />
+                                                <TableColumn fx:id="horseRaceRecordColumn" onEditStart="#initialize" prefWidth="144.79998779296875" text="Race Record" />
+                                                <TableColumn fx:id="horseGroupColumn" onEditStart="#initialize" prefWidth="117.60003662109375" text="Group" />
+                                                <TableColumn fx:id="horseImageColumn" onEditStart="#initialize" prefWidth="220.800048828125" text="Horse Image" />
+                                            </columns>
+                                        </TableView>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

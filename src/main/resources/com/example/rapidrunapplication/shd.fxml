@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rapidrunapplication.SHDController">
+    <children>
+        <MenuBar layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="1100.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleGoToMain" text="Home" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane layoutY="23.0" prefHeight="679.0" prefWidth="1102.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="SHD">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="1034.0" style="-fx-background-color: #c5eae7;">
+                            <children>
+                                <Label layoutX="40.0" layoutY="14.0" text="Save Horse Details">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Button defaultButton="true" layoutX="40.0" layoutY="119.0" mnemonicParsing="false" onAction="#saveHorseDetails" prefHeight="36.0" prefWidth="90.0" text="Save ">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <Label layoutX="40.0" layoutY="74.0" prefHeight="20.0" prefWidth="391.0" text="Click the Save button below to save Horse Details to a text file!">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

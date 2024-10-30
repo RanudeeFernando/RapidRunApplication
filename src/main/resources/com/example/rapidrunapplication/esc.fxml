@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rapidrunapplication.ESCController">
+    <children>
+        <MenuBar layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="1100.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleGoToMain" text="Home" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane layoutY="27.0" prefHeight="675.0" prefWidth="1100.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="ESC">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="646.0" prefWidth="1114.0" style="-fx-background-color: #c5eae7;">
+                            <children>
+                                <Label layoutX="40.0" layoutY="14.0" text="Exit Program">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="40.0" layoutY="59.0" text="Thank you for using Rapid Run! If you wish to exit the program click the button below.">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                                <Button defaultButton="true" layoutX="40.0" layoutY="90.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="36.0" prefWidth="95.0" text="Exit">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

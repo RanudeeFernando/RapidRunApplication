@@ -1,0 +1,9 @@
+Group A :
+
+Group B :
+ID: 2, Horse Name: ergwr, Jockey Name: ergw, Age: 2, Breed: Standardbred, Race Record: erwe, Group: B, Image Path: file:/C:/Users/DELL/OneDrive/Desktop/horses/h1.jpeg
+
+Group C :
+
+Group D :
+
